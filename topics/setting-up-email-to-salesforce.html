@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SalesForce Training</title>
+    <link rel="stylesheet" href="/css/build/main.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <p><a href="/">← Back to topics</a></p>
+
+        <h1>Email to SalesForce</h1>
+
+        <div class="toc">
+            <p class="toc__title">On this page:</p>
+
+            <ul class="toc__items">
+                <li class="toc__item"><a href="#intro">Introduction</a></li>
+                <li class="toc__item"><a href="#configuring">Configuring Email to SalesForce</a></li>
+                <li class="toc__item"><a href="#tips">Tips</a></li>
+                <li class="toc__item"><a href="#further-info">Further information</a></li>
+            </ul>
+        </div><!-- toc -->
+
+
+
+        <h2 id="intro">Introduction</h2>
+
+        <p>You can use  Email to Salesforce to assign emails to Contacts and other records in Salesforce. When composing, forwarding, or replying to email, simply enter your Email to Salesforce address in the BCC field or any recipient field. Salesforce receives a copy of the email and, depending on your configuration, adds it to either the Activity History related list of the matching records or to the <a href="https://help.salesforce.com/apex/HTViewHelpDoc?id=outlookcrm_unresolved_items.htm&language=en_US">My Unresolved Items</a> page, where you can manually assign it.</p>
+
+        <p>Each user has as unique SalesForce email just for them which you should save as a contact in your email application or address book. To find your unique SalesForce email address click the down arrow next to your name at the top of any SalesForce page, then on <b>My Setting</b>, then on <b>Email</b>, then on <b>My Email to SalesForce</b></p>
+
+        <img src="/images/email-to-sf.gif" alt="">
+
+
+
+        <h2 id="configuring">Configuring Email to SalesForce</h2>
+
+        <p>Before you can use your Email to Salesforce address, you must configure it.</p>
+
+        <ol>
+            <li>From the <b>My Email to SalesForce</b> page, enter email addresses you’ll use to send email in My Acceptable Email Addresses. Separate multiple email addresses with commas. Your Email to Salesforce address accepts only email from addresses you enter. If you don’t enter any email addresses, email sent to your Email to Salesforce address won’t be associated to any records.</li>
+            <li>Choose whether you’d like either all emails to be sent to My Unresolved Items so you can manually assign them to related records, or to have Salesforce first try to automatically assign them.</li>
+            <li>Configure Email to Salesforce to add emails as activities to matching opportunities, leads, contacts, or all three. Mostly likely, you'll want to choose all three.</li>
+            <li>If you selected leads or contacts, choose how Email to Salesforce should process emails containing lead or contact information that matches duplicate records. Email to Salesforce can add the email activity to either all matching records, the oldest duplicate record, or the record that has greatest number of activities.</li>
+            <li>If you selected leads or contacts, you can select If no matching records are found, create a task and send it to My Unresolved Items to have the email sent to My Unresolved Items if no matching records are found. If this checkbox isn’t selected and Salesforce can’t identify the email addresses in the To or From fields, the email won't be saved in Salesforce.</li>
+            <li>Select Always save email attachments to save attachments on emails sent to Salesforce. The size limit for an attached file is 25 MB when attached directly to the related list. The size limit for multiple files attached to the same email is 10 MB, with a maximum size of 5 MB per file.</li>
+            <li>If you want to receive a confirmation email when emails are successfully associated, select Email me confirmation of association.</li>
+            <li>Enter email domains you want to exclude from automatic association in Excluded Domains. Separate multiple email domains with commas.</li>
+            <li>Emails coming from these excluded domains go to My Unresolved Items. From there, you can choose to either manually assign them, or leave them unassigned.</li>
+            <li>Click Save.</li>
+        </ol>
+
+
+
+        <h2 id="tips">Tips</h2>
+
+        <ul>
+            <li>You can also save a message as an email activity without sending or resending it to another person. Simply forward the email with your Email to Salesforce address in the To field. Be sure that there are no other email address in the To, CC, and BCC fields. Salesforce receives a copy of the email and searches the From, To, and CC fields in the forwarded email for the email addresses of your leads and contacts. If any leads or contacts are found, Salesforce saves the email in the Activity History related list on the appropriate record.</li>
+        </ul>
+
+
+        <h3 id="further-info">Further information</h3>
+
+        <ul>
+            <li><a href="https://help.salesforce.com/apex/HTViewHelpDoc?id=email_my_email_2_sfdc.htm">Guidelines on Using Email to Salesforce →</a></li>
+            <li><a href="https://help.salesforce.com/HTViewHelpDoc?id=email_my_email_2_sfdc_setup.htm&language=en_US">Setting Up Email to Salesforce →</a></li>
+        </ul>
+
+
+        <hr>
+
+        <p><a href="/">← Back to topics</a></p>
+
+    </div><!-- container -->
+
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'bpk0gvs',
+          scriptTimeout: 3000
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
+
+</body>
+</html>

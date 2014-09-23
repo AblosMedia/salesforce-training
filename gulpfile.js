@@ -1,16 +1,17 @@
 /*global require, console, process */
 /*jshint strict:false */
 
-var gulp        = require('gulp'),
-    gutil       = require('gulp-util'),
-    fs          = require('fs'),
-    browserSync = require('browser-sync'),
-    reload      = browserSync.reload,
-    rename      = require("gulp-rename"),
-    sass        = require('gulp-ruby-sass'),
-    spawn       = require('child_process').spawn
-    notify      = require('gulp-notify'),
-    filter      = require('gulp-filter');
+var gulp         = require('gulp'),
+    gutil        = require('gulp-util'),
+    fs           = require('fs'),
+    browserSync  = require('browser-sync'),
+    reload       = browserSync.reload,
+    rename       = require("gulp-rename"),
+    sass         = require('gulp-ruby-sass'),
+    spawn        = require('child_process').spawn
+    notify       = require('gulp-notify'),
+    filter       = require('gulp-filter')
+    autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('browser-sync', function() {
     browserSync({
@@ -36,6 +37,9 @@ gulp.task('sass', function () {
             sourcemap: true,
             sourcemapPath: '../src',
             style: 'compressed'
+        }))
+        .pipe(autoprefixer({
+            cascade: false
         }))
         .pipe(gulp.dest('./css/build'))
         .pipe(filter('**/*.css'))
