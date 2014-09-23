@@ -2,6 +2,5 @@
 Thumbs.db
 node_modules
 npm-debug.log
-css/build
 .sass-cache
 css/src/_normalize.scss
