@@ -3,4 +3,4 @@ html,body{height:100%}h1,h2,h3,h4,h5,h6 p,ul,ol{margin-bottom:1.5em;margin-top:0
 h2{font-size:1.4em}@media (min-width: 30em){h2{font-size:1.7em}}
 h3{font-size:1.2em}@media (min-width: 30em){h3{font-size:1.4em}}
 p{margin:0 0 0.75em 0}li{margin-bottom:0.5em}li>p{margin-bottom:0}li>p+p{margin-top:0.5em}a{color:#B10B13;text-decoration:none;font-weight:bold;display:inline-block;line-height:1}a:hover,a:focus,a:focus{color:#d51a23;border-bottom:1px solid #d51a23}img{max-width:100%}.container{margin:0 auto;max-width:40em;padding:0.5em}@media (min-width: 30em){.container{padding:1.5em 2em}}
-.toc{display:block;padding:1em;background:#f5f5f5;border:1px solid #ebebeb;border-radius:0.125em}.toc>:last-child{margin-bottom:0}.toc__title{margin-bottom:0.5em}.toc__item{margin-bottom:0}
+.toc{display:block;padding:1em;background:#f5f5f5;border:1px solid #ebebeb;border-radius:0.125em}.toc>:last-child{margin-bottom:0}.toc__title{margin-bottom:0.5em}.toc__item{margin-bottom:0}.video-image{padding:1em;background:#f5f5f5;border:1px solid #ebebeb;border-radius:0.125em;margin-bottom:1.4em}

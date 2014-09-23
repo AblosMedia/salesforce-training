@@ -167,3 +167,17 @@ img {
 /*li*/.toc__item {
     margin-bottom: 0;
 }
+
+
+/**
+ * Video image
+ * Usually a .gif screencast
+ */
+
+.video-image {
+    padding: 1em;
+    background: darken(white, 4%);
+    border: 1px solid darken(white, 8%);
+    border-radius: 0.125em;
+    margin-bottom: 1em * $bl;
+}
