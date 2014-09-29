@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SalesForce Training</title>
+    <link rel="stylesheet" href="/css/build/main.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <p><a href="../../">← Back to topics</a></p>
+
+        <h1>Dealing with duplicates</h1>
+
+        <div class="toc">
+            <p class="toc__title">On this page:</p>
+
+            <ul class="toc__items">
+                <li class="toc__item"><a href="#catching-a-duplicate">Catching a duplicate</a></li>
+                <li class="toc__item"><a href="#overrideing-catcher">Overriding the duplicate catcher</a></li>
+                <li class="toc__item"><a href="#changing-rules">Changing how the duplicate catcher works</a></li>
+            </ul>
+        </div><!-- toc -->
+
+
+
+        <h2 id="catching-a-duplicate">Catching a duplicate</h2>
+
+        <p>When saving a new or updated Contact or Organisation, SalesForce will check to see whether this is a potential duplicate. If a potential duplicate is found SalesForce will block the save and present a message highlighting the fact that this record may be a duplicate.</p>
+
+        <img src="../images/dupe-catcher.gif" class="video-image">
+
+        <h2 id="overrideing-catcher">Overriding the duplicate catcher</h2>
+
+        <p>When the duplicate catcher blocks a save because there might be a duplicate you can choose to look at the existing records it found by clicking on their names, or you can choose to override the duplicate catcher once you are satisfied you are not actually creating a duplicate Contact or Organisation. Just click on <b>Override DupeCatcher</b> to proceed with saving the record as normal.</p>
+
+        <h2 id="changing-rules">Changing how the duplicate catcher works</h2>
+
+        <p>If you want to check or change how the duplicate catcher works (for example, to add a rule to check other specific email matches) just <a href="mailto:harrison@ablosmedia.com&subject=SalesForce+duplicate+catcher">contact Harrison</a> to discuss how this can be implemented.</p>
+
+
+        <hr>
+
+        <p><a href="../../">← Back to topics</a></p>
+
+    </div><!-- container -->
+
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'bpk0gvs',
+          scriptTimeout: 3000
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
+
+</body>
+</html>
