@@ -8,9 +8,9 @@ var gulp         = require('gulp'),
     reload       = browserSync.reload,
     rename       = require("gulp-rename"),
     sass         = require('gulp-ruby-sass'),
-    spawn        = require('child_process').spawn
+    spawn        = require('child_process').spawn,
     notify       = require('gulp-notify'),
-    filter       = require('gulp-filter')
+    filter       = require('gulp-filter'),
     autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('browser-sync', function() {
