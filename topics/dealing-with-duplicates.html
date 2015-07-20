@@ -20,6 +20,7 @@
                 <li class="toc__item"><a href="#catching-a-duplicate">Catching a duplicate</a></li>
                 <li class="toc__item"><a href="#overrideing-catcher">Overriding the duplicate catcher</a></li>
                 <li class="toc__item"><a href="#changing-rules">Changing how the duplicate catcher works</a></li>
+                <li class="toc__item"><a href="#merging">Merging existing duplicates</a></li>
             </ul>
         </div><!-- toc -->
 
@@ -38,6 +39,30 @@
         <h2 id="changing-rules">Changing how the duplicate catcher works</h2>
 
         <p>If you want to check or change how the duplicate catcher works (for example, to add a rule to check other specific email matches) just <a href="mailto:harrison@ablosmedia.com&subject=SalesForce+duplicate+catcher">contact Harrison</a> to discuss how this can be implemented.</p>
+
+
+        <h2 id="merging">Merging existing duplicates</h2>
+
+        <h3>Merging Contacts</h3>
+
+        <p>SalesForce has a tool to help you merge duplicate contacts. To merge two or more Contact's into one record they first must be part of the same Organisation, and you'll then use the Organisation's merge Contact's tool.</p>
+
+        <img src="../images/merge-contacts.gif" class="video-image">
+
+        <ol>
+            <li>Ensure all contacts you wish to merge together are in the same Organisation. You can change this Organisation after the merge is completed, so you may need to place them in a temporary Organisation if the Contact's to merge don't have an Organisation.</li>
+            <li>Find the Organisation containing the Contacts you wish to merge.</li>
+            <li>Click the "Merge Contacts" option in the Contacts section to launch the Merge My Contacts tool.</li>
+            <li>Search for the Contacts to merge by name. From the list of potential duplicates is displayed check the check boxes next to those you with to merge into one Contact. You can merge two or more records using the tool.</li>
+            <li>Click "Next." The Select the Values to Retain screen opens. The first contact record is listed on the left, and duplicates are listed on the right side of the screen.</li>
+            <li>Click the radio button in front of each field to retain it in the merged record.</li>
+            <li>Click the “Merge” button. A warning message displays indicating that the merge cannot be undone.</li>
+            <li>Click “OK” to merge the records.</li>
+        </ol>
+
+        <p>Note that Notes, attachments and documents for all selected duplicate records are saved in the final merged record.</p>
+
+        <p><strong>Warning:</strong> After records are merged, the action cannot be reversed.</p>
 
 
         <hr>
